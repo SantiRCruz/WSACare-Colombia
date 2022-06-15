@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/infoFragment">
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.wsacare.ui.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_codeFragment"
+            app:destination="@id/codeFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_checkListFragment"
+            app:destination="@id/checkListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeFragment"
+        android:name="com.example.wsacare.ui.CodeFragment"
+        android:label="fragment_code"
+        tools:layout="@layout/fragment_code" />
+    <fragment
+        android:id="@+id/checkListFragment"
+        android:name="com.example.wsacare.ui.CheckListFragment"
+        android:label="fragment_check_list"
+        tools:layout="@layout/fragment_check_list" />
+</navigation>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="12dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you  sure you  will  submit  this  information?"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_send_24"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:tint="@color/green" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/blue"
+            android:text="No"
+            app:layout_constraintEnd_toStartOf="@+id/btnYes"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="12dp"
+            android:layout_marginTop="12dp"
+            app:backgroundTint="@color/blue"
+            android:text="Yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnNo"
+            app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
